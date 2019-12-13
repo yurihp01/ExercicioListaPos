@@ -3,6 +3,7 @@ package com.example.exercicio2
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -24,6 +25,7 @@ class MainAdapter(users: ArrayList<Person>) : RecyclerView.Adapter<MainHolder>()
     override fun onBindViewHolder(holder: MainHolder, position: Int) {
         holder.nome.text = mUsers[position].nome
         holder.sobrenome.text = mUsers[position].sobrenome
+        holder.imagem.setImageDrawable(holder.itemView.context.getDrawable(mUsers[position].imagem))
     }
 
     override fun getItemCount(): Int {
@@ -34,5 +36,5 @@ class MainAdapter(users: ArrayList<Person>) : RecyclerView.Adapter<MainHolder>()
 class MainHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     var nome: TextView = itemView.findViewById(R.id.nome)
     var sobrenome: TextView = itemView.findViewById(R.id.sobrenome)
-
+    var imagem: ImageView = itemView.findViewById(R.id.imagem)
 }

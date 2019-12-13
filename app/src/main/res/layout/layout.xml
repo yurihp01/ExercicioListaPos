@@ -6,35 +6,24 @@
 
     <ImageView
         android:id="@+id/imagem"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/ic_directions_bike_black_24dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:scaleType="centerCrop"/>
 
     <TextView
         android:id="@+id/nome"
         android:layout_marginStart="20dp"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dado 1"/>
 
     <TextView
         android:id="@+id/sobrenome"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:text="Dado 2"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="Primeiro Semestre"/>
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:src="@drawable/ic_face_black_24dp"
-        android:scaleType="centerCrop"/>
 </LinearLayout>
